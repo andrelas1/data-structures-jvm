@@ -13,6 +13,7 @@
     <modules>
         <module>linked-list</module>
         <module>tree</module>
+        <module>graph</module>
     </modules>
 
     <properties>
@@ -55,6 +56,8 @@
 
 
     <build>
+        <sourceDirectory>${project.basedir}/src/main/kotlin</sourceDirectory>
+        <testSourceDirectory>${project.basedir}/src/test/kotlin</testSourceDirectory>
         <pluginManagement>
             <plugins>
                 <plugin>
@@ -92,7 +95,7 @@
                         <jvmTarget>1.8</jvmTarget>
                     </configuration>
                 </plugin>
-<!--                The maven kotlin plugin must run before the maven compiler plugin so that kotlin and java code can coexist-->
+                <!--                The maven kotlin plugin must run before the maven compiler plugin so that kotlin and java code can coexist-->
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
