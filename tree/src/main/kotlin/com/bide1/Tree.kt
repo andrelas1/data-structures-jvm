@@ -1,4 +1,5 @@
 package com.bide1
 
-class Tree {
+data class Tree<TreeNode> (val root: TreeNode) {
+    
 }
